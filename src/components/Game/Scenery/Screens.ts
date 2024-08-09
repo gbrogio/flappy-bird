@@ -22,7 +22,7 @@ export const [currentScreen, setCurrentScreen] = Setter<tCurrentScreen>(
 );
 
 const members = 1000;
-const train = true;
+const train = false;
 let gen = 0;
 let nBetterBird: any;
 
@@ -90,7 +90,7 @@ export const SCREENS = {
       Globals.pipes.draw();
       Globals.ground.draw();
       Globals.birds.map((bird) => BirdActions.draw(bird));
-      // Globals.points.draw();
+      Globals.points.draw();
     },
     click() {
       return !train && BirdActions.jump(Globals.birds[1]);
