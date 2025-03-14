@@ -21,8 +21,8 @@ export const [currentScreen, setCurrentScreen] = Setter<tCurrentScreen>(
   {} as tCurrentScreen,
 );
 
-const members = 1;
-const train = false;
+const members = 200;
+const train = true;
 let gen = 0;
 let nBetterBird: any;
 
